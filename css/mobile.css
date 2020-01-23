@@ -1,0 +1,20 @@
+@media screen and (max-width:1366px){
+.bg-object .object{max-width:900px;height: 100%;}
+.bg-object .object .out-frame{height:465px; top:36px; left:34px; right:34px;}
+.tempo {position:absolute;top:555px; right:35px;display: block;}
+}
+@media screen and (max-width:800px){
+.out-frame::-webkit-scrollbar {width:6px; background:transparent;}
+.out-frame::-webkit-scrollbar-track {box-shadow:none; border-radius:0 4px 4px 0; margin:25px 0;}
+.out-frame::-webkit-scrollbar-thumb {background-color:#cccccc; border-radius:4px;}
+.out-frame::-webkit-scrollbar:horizontal {height:6px;}
+.out-frame::-webkit-scrollbar:vertical {width:6px;}
+.tempo, .hide_mobile{display:none;}
+.hide_desktop{display:block;}
+.bg-object{ background: url("../images/bg-big3.jpg") bottom center no-repeat; position:fixed; overflow: hidden;}
+.bg-object .object{width:370px; position:absolute; left:0; right:0;height: 100%;max-width: 100%;width: 100%;}
+.bg-object .object .object-img2 {height:auto; width:340px; margin:0 auto;}
+.bg-object .object .object-img2 img{height:auto; width:100%; margin:0 auto;}
+.bg-object .object .out-frame{height:100%;top:0px; left:0px; right:0px; border-radius:0px;border: unset;}
+.videoframe {height: 100%;}
+}

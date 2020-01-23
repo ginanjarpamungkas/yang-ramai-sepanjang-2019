@@ -1,0 +1,103 @@
+body {margin: 0;overflow-x: hidden;font-family: 'Montserrat', sans-serif;font-weight: 300;background-color: #000;padding-bottom: 20pt;}
+body::-webkit-scrollbar {width:6px; background:rgba(255,255,255,0.1);}
+body::-webkit-scrollbar-track {box-shadow: inset 0 0 6px rgba(0,0,0,0.3);}
+body::-webkit-scrollbar-thumb {background-color:#666666;}
+body::-webkit-scrollbar:horizontal {height:6px;}
+body::-webkit-scrollbar:vertical {width:6px;}
+
+.out-frame::-webkit-scrollbar {width:6px; background:transparent;}
+.out-frame::-webkit-scrollbar-track {box-shadow:none; border-radius:4px; margin:6px 0;}
+.out-frame::-webkit-scrollbar-thumb {background-color:#cccccc; border-radius:4px;}
+.out-frame::-webkit-scrollbar:horizontal {height:6px;}
+.out-frame::-webkit-scrollbar:vertical {width:6px;}
+
+@media screen and (min-width:801px){
+#cd-lateral-nav::-webkit-scrollbar {width:6px; background:rgba(255,255,255,0.1);}
+#cd-lateral-nav::-webkit-scrollbar-track {box-shadow: inset 0 0 6px rgba(0,0,0,0.3);}
+#cd-lateral-nav::-webkit-scrollbar-thumb {background-color:#666666;}
+#cd-lateral-nav::-webkit-scrollbar:horizontal {height:6px;}
+#cd-lateral-nav::-webkit-scrollbar:vertical {width:6px;}
+}
+
+center {background-color: #f3f3f3;position: relative;}
+center img {width: 100%;}
+center img.arrow {position: absolute;bottom: 2%;width: 5%;animation: movetooltip 0.5s ease-out infinite alternate;left: 45%;}
+.hide-mobile {display: none;}
+/* .title {text-align: center; display: flex;flex-direction: column;align-items: center;}
+.title h1{font-size: 15vh;border-bottom: 1px solid #000; width: max-content; margin: 0;} */
+
+.body {margin: 0 auto;max-width: 40rem;}
+
+#chart-container {background-color: #f3f3f3;height: 100vh;margin-bottom:20px}
+#chart-kaledoskop{overflow-x: hidden;background: #f3f3f3;}
+#chart-kaledoskop .chart-title{font-family: 'Montserrat', sans-serif;font-weight: 900;fill: #000;font-size: 80pt;}
+.axis {font-family: 'Montserrat', sans-serif;font-size: 10px;font-weight: 300;text-align: center;fill: #fff;}
+
+.before-chart {background-color: #f3f3f3;padding-bottom: 1em;}
+.story-holder {display: block;width: 100%;max-width: 700px;margin: auto;z-index: 20;}
+
+.story-holder, .story {position: relative;pointer-events: none;}
+.story {display: flex;justify-content: center;width: 35%;margin-left: 65%;max-width: 300px;box-sizing: content-box;padding-left:5%;padding-right:5%;height: 100vh;line-height: 1.35em;}
+.story-content {background: rgb(0,0,0,0.8);color: #fff;height: max-content;padding:5pt;}
+.story-content a{color: #fff;pointer-events: all;}
+.story-content a:hover{color: #d71921;}
+.story-content a img{width: 100%;}
+#storytips-holder {position: fixed;z-index: 10;-webkit-transform: translateZ(10);transition: opacity .8s;}
+.tooltip-holder{opacity: 0;transition: opacity 2s;}
+.tooltip{width:max-content;padding: 5px 15px;color: #fff;animation: movetooltip 0.5s ease-out infinite alternate;border-radius: 4px;font-weight: 400;}
+.tooltip::before{content: '';left: 13px;display: inline-block;border-left: 7px solid transparent;border-right: 7px solid transparent;position: absolute;bottom: -7px;border-bottom: 0;}
+#bisnis1 .tooltip::before, #bisnis2 .tooltip::before{border-top: 7px solid #d71921;}
+#seleb1 .tooltip::before, #seleb2 .tooltip::before{border-top: 7px solid #9e1d1b;}
+#dunia1 .tooltip::before, #dunia2 .tooltip::before{border-top: 7px solid #681b15;}
+#metro1 .tooltip::before, #metro2 .tooltip::before{border-top: 7px solid #37140e;}
+#nasional1 .tooltip::before, #nasional2 .tooltip::before{border-top: 7px solid #000000;}
+
+footer{background-color: #000000;clear: both;color: #f5f5f5;margin-top: 0;margin-bottom: 10pt;padding: 30px 0;}
+footer .footer-wrapper {margin: 0 auto;padding: 0 30px;width: 100%;}
+footer .footer-wrapper .conde-links {display: none;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;-webkit-box-pack: start;-ms-flex-pack: start;justify-content: flex-start;}
+footer .conde-links .worldwide {-ms-flex-preferred-size: 242px;flex-basis: 242px;margin: 0 auto;}
+footer .conde-links .worldwide h6 {color: #aeabac;font-size: 12px;font-weight: 700;letter-spacing: .8px;line-height: 2.5;text-transform: uppercase;font-family: Helvetica Neue,Helvetica,Arial,sans-serif;}
+footer .conde-links .worldwide ul {list-style: none;margin: 0;padding: 0;}
+footer .conde-links .worldwide ul li {color: #706d6e;font-size: 12px;font-weight: 400;letter-spacing: 1px;line-height: 2.5;text-decoration: none;text-transform: uppercase;}
+footer .component-corp-legal {margin-top: 30px;color: #999;font-family: VFSans,Helvetica;font-weight: 400;font-size: 13px;line-height: 18px;}
+.component-corp-legal>div {display: -webkit-box;display: -ms-flexbox;display: flex;position: relative;}
+footer .component-corp-legal>div .conde-logo {height: 35px;margin: 0 auto 30px}
+.component-corp-legal .conde-logo {color: #FFFFFF;display: block;height: 22px;margin: 0 auto 25px;text-align: center;width: 200px;}
+
+.social-media {margin:0; padding: 0;position: absolute;right: 0;}
+.social-media li{display: inline-block;margin-left: 5px;}
+.social-media a{font-size: 1.5em;color: #FFFFFF;width: 32px;height: 32px;border-radius: 16px;display: flex;border: 1px solid #fff;justify-content: center;align-items: center;}
+
+@keyframes movetooltip {
+    from {transform: translate(0,-10px);}
+    to {transform: translate(0,0);}
+}
+
+@media only screen and (max-width:1024px){
+    .story{margin-left: 50%;}
+}
+@media only screen and (max-width:550px){
+    #bisnis2 .tooltip::before{right: 2px; left:unset}
+    #dunia1 .tooltip::before{left:2px}
+    #chart-kaledoskop .chart-title{font-size: 30pt;}
+    .story{width: 100%;margin: 0 auto;padding: 0;}
+    footer .footer-wrapper {padding: 0;}
+    footer .footer-wrapper .conde-links{display: grid;grid-template-columns: auto; grid-gap: 10px;padding: 0 25pt; justify-content: center; text-align: center;}
+	footer .conde-links .worldwide {width: 250px;margin: 0 auto;}
+	footer .component-corp-legal>div {margin-top: 10px;display: block;text-align: center;}
+    .social-media {position: unset;padding-bottom: 10pt;}
+    .title h1{font-size: 6vh;}
+    .title h3, .body{padding: 0 20pt;}
+}
+@media (min-width: 800px){
+    .hide-mobile {display: block;}
+    footer {display: none;}
+	footer .footer-wrapper {max-width: 90%;padding: 0;}
+	.component-corp-legal {margin-top: 30px;padding-top: 35px;}
+}
+@media (min-width: 550px){
+	footer .footer-wrapper .conde-links {display: -webkit-box;display: -ms-flexbox;display: flex;}
+	footer .component-corp-legal {margin-top: 50px;border-top: 1px solid #666;font-size: 13px;line-height: 18px;}
+	footer .component-corp-legal>div {margin-top: 10px;}
+	footer .component-corp-legal>div .conde-logo {margin: 0 40px 0 0;width: auto;}
+}
